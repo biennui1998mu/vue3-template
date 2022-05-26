@@ -20,8 +20,8 @@
 </template>
 <script lang="ts">
 import {computed, ref, watch} from 'vue'
-import {keypressCommon, pasteCommon, convertToText} from "./common";
-import {PATTERN} from "./systemConstant";
+import {keypressCommon, pasteCommon, convertToText} from "@/core/utils/common";
+import {PATTERN} from "@/core/utils/systemConstant";
 
 export default {
   props: ['placeholder', 'suffix', 'maxLength', 'showText', 'disabled', 'error'],
