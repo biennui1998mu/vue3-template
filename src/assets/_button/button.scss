@@ -1,0 +1,37 @@
+.btn {
+  padding: 0.7rem 1rem;
+  background: white;
+  border: 1px solid silver;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s;
+
+  &:hover {
+    background: silver;
+  }
+}
+
+.btn-primary {
+  color: white;
+  background: #0d6efd;
+
+  border:none;
+}
+.btn-secondary {
+  color: white;
+  background: #6c757d;
+
+  border:none;
+}
+.btn-warning {
+  color: black;
+  background: #ffc107;
+
+  border:none;
+}
+.btn-error {
+  color: black;
+  background: #dc3545;
+
+  border:none;
+}
