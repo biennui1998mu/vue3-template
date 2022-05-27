@@ -20,7 +20,7 @@
 </template>
 
 <script lang="ts">
-import Dialog from "@/components/Shared/Dialog/Dialog.vue"
+import Dialog from "@/components/Dialog/Dialog.vue"
 import { ref } from "vue"
 
 export default {
