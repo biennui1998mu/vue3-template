@@ -1,10 +1,10 @@
-# SFInputMoney
+# InputMoney
 > Visual studio code: Ctrl+Shift+V
 
 ### Import component
 
 ```html
-<SFInputMoney ref="SFInputMoneyRef"
+<InputMoney ref="SFInputMoneyRef"
               @getValue="getMoneyVal"
               :placeholder="'Số tiền'"
               :suffix="'VNĐ'"
@@ -12,11 +12,11 @@
               :disabled="true"
               :error="true"
               :showText="true">
-</SFInputMoney>
+</InputMoney>
 ```
 
 ```typescript
-import SFInputMoney from "@/components/SFShared/SFInputMoney/SFInputMoney.vue";
+import InputMoney from "@/components/Shared/InputMoney/SFInputMoney.vue";
 ```
 
 ### Get value input
@@ -30,13 +30,13 @@ const getMoneyVal = (val) => {
 ### Set value input
 
 ```typescript
-const SFInputMoneyRef = ref<null | { setInput: (val) => null }>(null)
-const setSFInputMoneyVal = (val) => {
-    SFInputMoneyRef.value?.setInput(val)
+const InputMoneyRef = ref<null | { setInput: (val) => null }>(null)
+const setInputMoneyVal = (val) => {
+    InputMoneyRef.value?.setInput(val)
 }
 
 return {
-    SFInputMoneyRef
+    InputMoneyRef
 }
 ```
 

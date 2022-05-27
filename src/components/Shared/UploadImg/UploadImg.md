@@ -1,18 +1,20 @@
-# SFUploadImg
+# UploadImg
+
 > Visual studio code: Ctrl+Shift+V
 
 ### Import component
 
 ```html
-<SFUploadImg :imgListPreview="imgListPreview"
-             :type="'upload'"
-             :disabled="true"
-             @getImgFileList="getImgFileList">
-</SFUploadImg>
+
+<UploadImg :imgListPreview="imgListPreview"
+           :type="'upload'"
+           :disabled="true"
+           @getImgFileList="getImgFileList">
+</UploadImg>
 ```
 
 ```typescript
-import SFUploadImg from "@/components/SFShared/SFUploadImg/SFUploadImg.vue";
+import UploadImg from "@/components/Shared/UploadImg/UploadImg.vue";
 ```
 
 ### Upload image
@@ -27,14 +29,14 @@ const getImgFileList = (val) => {
 ```
 
 * Example
-
 ```html
-<SFUploadImg :type="'upload'"
-             @getImgFileList="getImgFileList">
-</SFUploadImg>
+<UploadImg :type="'upload'"
+           @getImgFileList="getImgFileList">
+</UploadImg>
 ```
 
 ### Preview image
+
 > * Set ```type = 'preview'```
 >* Pass array of img path to ```:imgListPreview```
 
@@ -45,9 +47,9 @@ const imgListPreview = ref([]);
 * Example
 
 ```html
-<SFUploadImg :type="'preview'"
-             :imgListPreview="imgListPreview">
-</SFUploadImg>
+<UploadImg :type="'preview'"
+           :imgListPreview="imgListPreview">
+</UploadImg>
 ```
 
 ### Variables binding
