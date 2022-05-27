@@ -9,7 +9,7 @@ const urls = {
 };
 
 Object.keys(urls).map((url) => {
-    urls[url] = API_URL + urlPrefix + urls[url];
+    // urls[url] = API_URL + urlPrefix + urls[url];
     return url;
 });
 

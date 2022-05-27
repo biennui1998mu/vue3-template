@@ -20,7 +20,7 @@ class ApiCenter {
 
         axios.interceptors.request.use((config) => {
                 const token = 'token';
-                config.headers["Authorization"] = "Bearer " + token
+                // config.headers["Authorization"] = "Bearer " + token
 
                 // cancel Token if exist in Array
                 if (cancelTokenArray.length > 0) {

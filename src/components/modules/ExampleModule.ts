@@ -12,7 +12,7 @@ export default function useTransCaIn() {
     const errors = ref("");
     const isLoadingQuery = ref(false);
 
-    const getPages = async (payload) => {
+    const getPages = async (payload: any) => {
         isLoadingQuery.value = true;
         return new Promise(resolve => {
             ExampleService.getPages(payload).then(
@@ -38,7 +38,7 @@ export default function useTransCaIn() {
         });
     }
 
-    const createObj = async (payload) => {
+    const createObj = async (payload: any) => {
         return new Promise(resolve => {
             ExampleService.createObj(payload).then(
                 response => {
@@ -52,7 +52,7 @@ export default function useTransCaIn() {
         });
     }
 
-    const updateObj = async (payload) => {
+    const updateObj = async (payload: any) => {
         return new Promise(resolve => {
             ExampleService.updateObj(payload).then(
                 response => {
@@ -66,7 +66,7 @@ export default function useTransCaIn() {
         });
     }
 
-    const deleteObj = async (payload) => {
+    const deleteObj = async (payload: any) => {
         return new Promise(resolve => {
             ExampleService.deleteObj(payload).then(
                 response => {
@@ -80,7 +80,7 @@ export default function useTransCaIn() {
         });
     }
     
-    const getById = async (payload) => {
+    const getById = async (payload: any) => {
         return new Promise(resolve => {
             ExampleService.getById(payload).then(
                 response => {
