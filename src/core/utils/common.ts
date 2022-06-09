@@ -112,3 +112,36 @@ export function pasteCommon(event: any, patternType: string) {
         }
     }, 100)
 }
+
+// check nhập số thập phân dương
+export function checkDecimalPositive(event: any) {
+    console.log(event.keyCode);
+    // không cho nhập dấu thập phân vào đầu chuỗi
+    if (event.target.value.length === 0) {
+        if (event.keyCode === 190 || event.keyCode === 110) {
+            event.preventDefault()
+        }
+    }
+
+    // nếu như đã có dấu thập phân thì không cho nhập dấu thập phân lần 2
+    if (event.target.value.indexOf('.') > -1) {
+        if (event.keyCode === 190 || event.keyCode === 110) {
+            event.preventDefault()
+        }
+    }
+
+    /**
+     * @description: Không cho nhập chữ cái và ký tự đặc biệt ngoại trừ những trường hợp ở dưới
+     * @code: 8 [backspace],
+     * @code: 190 & 110 [.]
+     * @code: 38...40 [arrow keys]
+     * @code: Ctrl + A & Ctrl + S & Ctrl + V [Chọn tất, copy, paste]
+     */
+    if (!(/\d/.test(event.key)) &&
+        event.keyCode !== 8 &&
+        event.keyCode !== 190 && event.keyCode !== 110 &&
+        event.keyCode !== 37 && event.keyCode !== 38 && event.keyCode !== 39 && event.keyCode !== 40 &&
+        !(event.ctrlKey && (event.keyCode == 65 || event.keyCode == 67 || event.keyCode == 86))) {
+        event.preventDefault()
+    }
+}
