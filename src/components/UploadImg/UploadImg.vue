@@ -18,7 +18,7 @@
   <!--show image-->
   <div v-else-if="type === 'preview'" class="image-frame">
     <div class="image-item" v-for="(path, index) in imgListPreview" :key="index"
-         @click="openImgDialog(`${VUE_APP_STORAGE_URL}/${path}`)">
+         @click="openImgDialog(`${STORE_IMAGE}/${path}`)">
       <div class="image-src" :style="{backgroundImage: urlBackground(path)}"></div>
       <div class="img-hover-cover">
         <el-icon>
@@ -46,13 +46,13 @@ export default {
   components: {ZoomIn},
   setup(props, {emit}) {
 
-    const VUE_APP_STORAGE_URL = process.env.VUE_APP_STORAGE_URL
+    const STORE_IMAGE = process.env.STORE_IMAGE
     const propsDisabled = computed(() => {
       return props.disabled || false
     })
 
     const urlBackground = (path) => {
-      const url = 'url(' + VUE_APP_STORAGE_URL + path.replace('(', '%28').replace(')', '%29').replace(' ', '%20') + ')'
+      const url = 'url(' + STORE_IMAGE + path.replace('(', '%28').replace(')', '%29').replace(' ', '%20') + ')'
       return url
     }
 
@@ -118,7 +118,7 @@ export default {
     }
 
     return {
-      VUE_APP_STORAGE_URL,
+      STORE_IMAGE,
       imageList,
       imgDialog,
       imgDialogSource,
