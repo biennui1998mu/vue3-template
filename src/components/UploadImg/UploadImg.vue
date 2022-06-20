@@ -150,6 +150,11 @@ export default {
     height: 70px;
 
     &:hover {
+      border: 1px solid rgb(64, 158, 255);
+      i {
+        color: rgb(64, 158, 255);
+      }
+
       .remove-overlay {
         opacity: 1;
       }
