@@ -18,16 +18,28 @@
     <template v-slot:footer></template>
   </Dialog>
 
+  <VuenosInputMoney ref="InputMoneyRef"
+                    @getValue="getMoneyVal"
+                    @blur="blurInput"
+                    :placeholder="'Số tiền'"
+                    :suffix="'VNĐ'"
+                    :maxLength="14"
+                    :disabled="false"
+                    :error="false"
+                    :showText="true">
+  </VuenosInputMoney>
   <VuenosUploadImage :type="'upload'" @getImgFileList="getImgFileList"></VuenosUploadImage>
+
 </template>
 
 <script lang="ts">
 import Dialog from "@/components/Dialog/Dialog.vue"
 import { ref } from "vue"
 import VuenosUploadImage from 'vuenos-upload-image'
+import VuenosInputMoney from 'vuenos-input-money'
 
 export default {
-  components: {Dialog, VuenosUploadImage},
+  components: {Dialog, VuenosUploadImage, VuenosInputMoney},
   setup() {
     const isDialogVisible = ref(false)
     const openDialog = () => {
@@ -39,11 +51,19 @@ export default {
     const getImgFileList = (val:any) => {
       console.log(val)
     }
+    const getMoneyVal = (val:any) => {
+      console.log(val);
+    }
+    const blurInput = async () => {
+      //do something
+    }
     return {
       isDialogVisible,
       openDialog,
       closeDialog,
-      getImgFileList
+      getImgFileList,
+      getMoneyVal,
+      blurInput
     }
   }
 }
