@@ -17,14 +17,17 @@
 
     <template v-slot:footer></template>
   </Dialog>
+
+  <VuenosUploadImage :type="'upload'" @getImgFileList="getImgFileList"></VuenosUploadImage>
 </template>
 
 <script lang="ts">
 import Dialog from "@/components/Dialog/Dialog.vue"
 import { ref } from "vue"
+import VuenosUploadImage from 'vuenos-upload-image'
 
 export default {
-  components: {Dialog},
+  components: {Dialog, VuenosUploadImage},
   setup() {
     const isDialogVisible = ref(false)
     const openDialog = () => {
@@ -33,10 +36,14 @@ export default {
     const closeDialog = () => {
       isDialogVisible.value = false
     }
+    const getImgFileList = (val:any) => {
+      console.log(val)
+    }
     return {
       isDialogVisible,
       openDialog,
-      closeDialog
+      closeDialog,
+      getImgFileList
     }
   }
 }

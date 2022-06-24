@@ -17,6 +17,7 @@
     "vue-class-component": "^8.0.0-0",
     "vue-router": "^4.0.3",
     "vuenos-input-money": "^0.1.2",
+    "vuenos-upload-image": "^0.0.3",
     "vuex": "^4.0.0"
   },
   "devDependencies": {
