@@ -1,10 +1,19 @@
 {
   "name": "vue-3-template",
-  "version": "0.1.0",
-  "private": true,
+  "description": "Vue 3 template (vuex, vue-router, axios, jest, vuenos, element-plus)",
+  "version": "0.0.1",
+  "private": false,
+  "author": {
+    "name": "Sơn Nguyễn",
+    "email": "songokun98@gmail.com",
+    "github": "https://github.com/biennui1998mu",
+    "linkedin": "https://www.linkedin.com/in/sonnguyendinhhai/",
+    "team": "1M1G"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.0.5",
@@ -14,21 +23,27 @@
     "register-service-worker": "^1.7.2",
     "vue": "^3.2.13",
     "vue-axios": "^3.4.1",
-    "vue-class-component": "^8.0.0-0",
     "vue-router": "^4.0.3",
-    "vuenos-input-money": "^1.0.4",
-    "vuenos-upload-image": "^0.0.5",
+    "vuenos-input-money": "^1.0.5",
+    "vuenos-upload-image": "^0.0.8",
     "vuex": "^4.0.0"
   },
   "devDependencies": {
+    "@types/jest": "^27.0.1",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-pwa": "~5.0.0",
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-plugin-unit-jest": "~5.0.0",
     "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "@vue/test-utils": "^2.0.0-0",
+    "@vue/vue3-jest": "^27.0.0-alpha.1",
+    "babel-jest": "^27.0.6",
+    "jest": "^27.0.5",
     "sass": "^1.32.7",
     "sass-loader": "^12.0.0",
+    "ts-jest": "^27.0.4",
     "typescript": "~4.5.5",
     "vuex-module-decorators": "^2.0.0"
   }

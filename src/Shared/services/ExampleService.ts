@@ -1,4 +1,4 @@
-import ApiControlCenter from "@/Shared/services/ApiControlCenter";
+import ApiControlCenter from "@/shared/services/ApiControlCenter";
 
 const API_URL = process.env['url'];
 
