@@ -8,8 +8,6 @@
 <h3 align="center">vue-3-template</h3>
 </div>
 
-
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -53,6 +51,8 @@ Is a template for project Vue3 + typescript + element plus + units test + vuenos
 
 <!-- GETTING STARTED -->
 ## Project setup
+* If you don't want to use vuenos(2 packages I write own), you can remove it from package.json before install node_modules
+
 ### Prerequisites
 ```sh
 npm install npm@latest -g
