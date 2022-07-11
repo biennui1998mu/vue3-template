@@ -1,7 +1,7 @@
-import ExampleService from "@/shared/services/ExampleService";
-import { ExampleModel } from "@/shared/model/ExampleModel";
+import ExampleService from "@/share/services/ExampleService";
+import { ExampleModel } from "@/share/model/ExampleModel";
 import { ref } from "vue"
-import { TablePaginationModel } from "@/shared/model/TablePaginationModel";
+import { TablePaginationModel } from "@/share/model/TablePaginationModel";
 
 export default function useTransCaIn() {
     const NumberRecordUpdate = ref(0);

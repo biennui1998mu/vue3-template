@@ -33,7 +33,7 @@
 </template>
 
 <script lang="ts">
-import Dialog from "@/components/Dialog/Dialog.vue"
+import Dialog from "@/share/components/Dialog/Dialog.vue"
 import { ref } from "vue"
 import VuenosUploadImage from 'vuenos-upload-image'
 import VuenosInputMoney from 'vuenos-input-money'
