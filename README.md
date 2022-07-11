@@ -45,7 +45,10 @@
 Is a template for project Vue3 + typescript + element plus + units test + vuenos(can remove if unused)
 
 #### Built With
-[![Vue][Vue.js]][Vue-url]
+[![Vue.js]][Vue-url]
+![Typescript][Typescript]
+![SCSS][SCSS]
+[![Element-plus]][Element-plus-url]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -121,3 +124,8 @@ Amazing readme template was referred from [Best-README-Template](https://github.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [Vue-url]: https://vuejs.org/
+[Vue.js]: https://img.shields.io/badge/Vue%203-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
+[Typescript]: https://img.shields.io/badge/Typescript-35495E?style=for-the-badge&logo=Typescript
+[Scss]: https://img.shields.io/badge/Scss-35495E?style=for-the-badge&logo=Scss
+[Element-plus-url]: https://element-plus.org/en-US/
+[Element-plus]: https://img.shields.io/badge/Element%20plus-35495E?style=for-the-badge
