@@ -1,11 +1,12 @@
-import ApiControlCenter from "@/shared/services/ApiControlCenter";
+import axiosClient from "@/shared/services/ApiControlCenter";
 
 const API_URL = process.env['url'];
 
 const urlPrefix = "/subUrl";
 
 const urls = {
-    create: "/Create",
+    get: "/get",
+    post: "/post",
 };
 
 Object.keys(urls).map((url) => {
@@ -14,20 +15,11 @@ Object.keys(urls).map((url) => {
 });
 
 class ExampleService {
-    async getPages(payload: string) {
-        return await ApiControlCenter.get(urls.create);
+    async get() {
+        return await axiosClient.get(urls.get);
     }
-    async getById(payload: string) {
-        return await ApiControlCenter.post(urls.create, payload);
-    }
-    async createObj(payload: string) {
-        return await ApiControlCenter.post(urls.create, payload);
-    }
-    async updateObj(payload: string) {
-        return await ApiControlCenter.post(urls.create, payload);
-    }
-    async deleteObj(payload: string) {
-        return await ApiControlCenter.post(urls.create, payload);
+    async post(payload: string) {
+        return await axiosClient.post(urls.post, payload);
     }
 }
 export default new ExampleService();

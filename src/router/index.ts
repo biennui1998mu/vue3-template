@@ -17,4 +17,8 @@ const router = createRouter({
   routes
 })
 
+// do something before each route
+router.beforeEach((to, from) => {
+})
+
 export default router

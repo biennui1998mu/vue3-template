@@ -1,7 +1,7 @@
 {
   "name": "vue-3-template",
   "description": "Vue 3 template (vuex, vue-router, axios, jest, vuenos, element-plus)",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "author": {
     "name": "Sơn Nguyễn",
@@ -24,8 +24,6 @@
     "vue": "^3.2.13",
     "vue-axios": "^3.4.1",
     "vue-router": "^4.0.3",
-    "vuenos-input-money": "^1.0.5",
-    "vuenos-upload-image": "^0.0.8",
     "vuex": "^4.0.0"
   },
   "devDependencies": {
