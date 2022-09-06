@@ -1,6 +1,6 @@
 {
   "name": "vue-3-template",
-  "description": "Vue 3 template (vuex, vue-router, axios, jest, vuenos, element-plus)",
+  "description": "Vue 3 template (vuex, vue-router, axios, jest, element-plus)",
   "version": "0.0.2",
   "private": false,
   "author": {

@@ -1,16 +1,16 @@
 import axiosClient from "@/shared/services/ApiControlCenter";
 
-const API_URL = process.env['url'];
+const API_URL = process.env.VUE_APP_API_URL;
 
 const urlPrefix = "/subUrl";
 
-const urls = {
+const urls: any = {
     get: "/get",
     post: "/post",
 };
 
 Object.keys(urls).map((url) => {
-    // urls[url] = API_URL + urlPrefix + urls[url];
+    urls[url] = API_URL + urlPrefix + urls[url];
     return url;
 });
 

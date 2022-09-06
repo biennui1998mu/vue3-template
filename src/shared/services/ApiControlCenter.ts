@@ -16,8 +16,10 @@ const axiosClient = axios.create({
     },
 });
 
-const token = "hello"
-axiosClient.defaults.headers.common['Authorization'] = 'Bearer ' + token;
+const token = localStorage.getItem('accessToken')
+if (token) {
+    axiosClient.defaults.headers.common['Authorization'] = 'Bearer ' + token;
+}
 
 axiosClient.interceptors.request.use((config) => {
         // cancel Token if exist in Array

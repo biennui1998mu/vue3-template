@@ -1,4 +1,4 @@
-import ExampleService from "@/shared/services/ExampleService";
+import ExampleService from "@/shared/services/example.service";
 import { ref } from "vue"
 import {ExampleModel} from "@/shared/model/ExampleModel";
 
